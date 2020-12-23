@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+body {
+    font-family: Ubuntu, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin: 0px;
+}
+
+h1, h2, h3, h4{
+    font-family: Russo One, Arial, Helvetica, sans-serif;  
+    font-weight: 500; 
+    margin: 0px;   
+}
+
+.wrapper {
+    min-width: 560px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+}
+
+header { 
+    border-radius: 3px;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    margin: 10px;
+    width: 100%;
+}
+
+.links-container {
+    background-color: lightgray;
+    border-radius: 10px;
+}
+
+.links-list {
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+
+header li {
+    width: calc(14.29% - 10px);
+    display: block;
+    text-align: center;
+    padding: 5px;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+header li:hover {
+    background-color: #ffec00;
+    border-radius: 10px;
+    font-weight: 300;
+}
+
+main {
+    display: flex;
+
+}
+
+section {
+    margin-top: 10px;
+    padding-top: 5px;
+    background-color: #ffdb00;
+    box-sizing: border-box;
+    width: 70%;
+    height: fit-content;
+    border-radius: 10px;
+}
+
+aside {
+    width: 30%;
+    margin-top: 10px;
+   // background-color: khaki;
+    padding: 0px;
+}
+
+.tasks-container {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    background-color:  lightgray;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.tasks-links {
+    background-color: white;
+    margin: 10px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding: 10px;
+    padding-bottom: 0px;
+    border-radius: 10px;
+}
+
+.news-container {
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+    padding-bottom: 0px;
+    border-radius: 10px;
+}
+.news-container:nth-child(2) {
+margin-top: 5px;
+}
+
+.block-header {
+margin-left: 10px;
+}
+
+.task-theme {
+    margin-top: 5px;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #ffdb00;
+    padding: 5px;
+    padding-left: 10px;
+    border-radius: 10px;
+}
+
+.one-task-links-container {
+    margin-top: 5px;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #fff899;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+p {
+    margin: 0px;
+    padding: 0px;
+}
+
+.post-date {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: end;
+    color: darkgray;
+    font-size: 10px;
+}
+
+

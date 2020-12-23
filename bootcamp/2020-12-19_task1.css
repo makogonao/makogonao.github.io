@@ -1,0 +1,256 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Cera CY", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857;
+    padding: 0px;
+    margin: 0px;
+
+}
+
+.wrapper {
+    width: 80%;
+    max-width: 992px;
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.menu-list {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 50px;
+    max-width: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px;
+    width: 100%;
+}
+
+.user-logo {
+    margin-left: 7px;
+    color: white;
+    background-color: rgb(131, 58, 224);
+    width: 40px;
+    min-width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-logo:hover {
+    background-color: rgb(169, 118, 236);
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+header li {
+    list-style-type: none;
+    padding: 2px;
+    padding-left: 20px;    padding-right: 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid rgb(174, 134, 226);;
+}
+
+header li:hover {
+    background-color: white;
+    position: relative;
+    bottom: 3px;
+    right: 3px;
+    box-shadow:2px 2px 6px 0px rgba(0,0,0,0.29);
+    -webkit-box-shadow:2px 2px 6px 0px rgba(0,0,0,0.29);
+    -moz-box-shadow:2px 2px 6px 0px rgba(0,0,0,0.29);
+}
+
+.logo {
+    height: 50px;
+}
+
+main {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lesson-card{
+    padding: 10px;
+    width: 30%;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+}
+
+.lesson-img {
+    width:100%;
+    margin-bottom: 10px;
+}
+
+p {
+    margin: 0px;
+    font-size: 12px;
+}
+
+.button {
+    margin-top: 10px;
+    background-color: rgb(169, 118, 236);
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+    color:white;
+}
+
+.button:active {
+    background-color: #b69adb;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #eee;
+    color: #666;
+    font-size: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+}
+
+.footer-conteiner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 992px;
+}
+
+.social-logo {
+    width: 25px;
+}
+
+.dropdown-child {
+    display: none;
+    width: 120px;
+    position: absolute;
+    padding:5px;
+    background-color: rgb(174, 134, 226);
+    top: 20px;
+    border-radius: 10px;
+}
+
+.dropdown:hover .dropdown-child {
+    display: block;
+    color: black;
+}
+.menu-icon-line{
+    width: 35px;
+    height: 5px;
+    background-color: rgb(131, 58, 224);
+    margin: 3px 0;
+}
+
+.social-links {
+    min-width: 81px;
+}
+
+.menu-desktop {
+    width: 100%;
+    display: flex;
+}
+
+.menu-mobile-icon {
+    display: none;
+}
+
+.menu-mobile {
+    background-color: #e0d5ed;
+    display: none; 
+    position: absolute;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 5px;
+}
+
+.menu-list-mobile {
+    padding: 0px;
+}
+
+
+
+@media (max-width: 1000px) {
+   
+    .menu-mobile-icon {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu-mobile-icon  li{
+        background-color: white;
+    }
+
+    .menu-mobile {
+        background-color: #e0d5ed;
+        display: none;
+        top: 20px;
+        left: 20px;
+    }
+    
+    .menu-mobile-icon:hover .menu-mobile {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header {
+        margin-top: 10px;
+    }
+    .menu-desktop {
+        display: none;
+    }
+    
+    .wrapper {
+        width: 100%;
+    }
+    
+    main {
+        margin: 0px;
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    .lesson-card {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .footer-conteiner {
+        padding: 10px;
+        width: 100%;
+    }
+
+    footer {
+        position: static;
+    }
+    
+}
