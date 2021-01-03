@@ -5,6 +5,8 @@ body {
     font-family: Ubuntu, Arial, Helvetica, sans-serif;
     font-size: 14px;
     margin: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 h1, h2, h3, h4{
@@ -14,7 +16,7 @@ h1, h2, h3, h4{
 }
 
 .wrapper {
-    min-width: 560px;
+    min-width: 300px;
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
@@ -73,7 +75,6 @@ header li:hover {
 
 main {
     display: flex;
-
 }
 
 section {
@@ -89,7 +90,6 @@ section {
 aside {
     width: 30%;
     margin-top: 10px;
-   // background-color: khaki;
     padding: 0px;
 }
 
@@ -165,4 +165,62 @@ p {
     font-size: 10px;
 }
 
+@media (min-width: 0px) and (max-width: 900px) {
+
+    @media (min-width: 0px) and (max-width: 600px) {
+        .links-list {
+            padding: 0px;
+            margin: 0px;
+            margin-top: 25px;
+            list-style-type: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            border-radius: 10px;
+        }
+        
+        header li {
+            width: 45%;
+            text-align: center;
+            padding: 5px;
+        }
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        margin-top: 25px;
+    }
+
+    section {
+        margin-top: 10px;
+        padding-top: 5px;
+        background-color: #ffdb00;
+        box-sizing: border-box;
+        width: 100%;
+        height: fit-content;
+        border-radius: 10px;
+    }
+
+    aside {
+        width: 100%;
+        margin-top: 30px;
+        padding: 0px;        
+    }
+
+    .tasks-container {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-left: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        box-sizing: border-box;
+        background-color:  lightgray;
+        border-radius: 10px;
+        margin-bottom: 30px;
+    }
+
+
+}
 
