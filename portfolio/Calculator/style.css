@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@font-face {
+    font-family: 'a_LCDNova';
+    src: url('./fonts/a_LCDNova.ttf') format('truetype');
+    font-style: normal; 
+    font-weight: normal; 
+}
+
+body {
+    background-color: #d8dde4;
+}
+
+input {
+    font-family: 'Bebas Neue', 'Courier New', Courier, monospace;
+    border-width: 3px;
+}
+
+.button {
+    width: 60px;
+    height: 50px;
+    font-size: 30px;
+    background-color: #485466;
+    color: white;
+    outline: none;
+    border-radius: 5px;
+    margin: 2px;
+    border-width: 1px;
+}
+
+.button:hover {
+    background-color: #303742;
+    color:#ffbf00;
+}
+
+.calc-container {
+    margin-top: 50px;
+    margin: auto;
+    width: 260px;
+    background: linear-gradient(0deg, rgba(72,84,102,1) 0%, rgba(72,84,102,1) 74%, rgba(57,66,80,1) 82%, rgba(61,71,87,1) 100%);
+    padding: 20px;
+    border-radius: 20px;
+    border-width: 3px;
+    border-style: outset;
+    border-color: -internal-light-dark(rgba(72,84,102,1) 0%, rgba(72,84,102,1) 74%);
+    border-image: initial;
+    box-shadow:3px 3px 7px rgba(0, 0, 0, 0.55);
+    -webkit-box-shadow:3px 3px 7px rgba(0, 0, 0, 0.55);
+
+}
+
+.calc-line {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#calc-face {
+    margin-top: 15px;
+    font-family: 'a_LCDNova', 'Bebas Neue', 'Courier New', Courier, monospace;
+    width: 100%;
+    height: 30px;
+    border: 2px, darkgrayl;
+    background-color: #acb5b2;
+    font-size: 30px;
+    text-align: end;
+    padding: 5px;
+    margin-bottom: 20px;
+    outline: none;
+}
