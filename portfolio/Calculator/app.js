@@ -25,7 +25,7 @@ let calculator = {
     },
 
     buttonSubtraction: function() {
-        if (this.calcAddMemery === 0 && this.calcMemery === 0) {
+        if (this.calcAddMemery === 0 && this.calcMemery === 0 || this.curAction === this.multiplication) {
             this.recordNumberToFace('-')
         } else {
         this.buttonEquality();
