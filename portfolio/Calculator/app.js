@@ -25,9 +25,9 @@ let calculator = {
     },
 
     buttonSubtraction: function() {
-        if (this.calcAddMemery === 0 && this.calcMemery === 0 || this.curAction === this.multiplication) {
+        if (this.calcAddMemery === 0 && this.calcMemery === 0 || this.curAction === this.multiplication || this.curAction === this.division) {
             this.recordNumberToFace('-')
-        } else {
+        } else if (document.getElementById('calc-face').value !== '-') {
         this.buttonEquality();
         this.curAction = this.subtraction; 
         }
